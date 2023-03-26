@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+.card-div {
+  display: flex;
+  background-color: lightblue;
+  border: 1.2rem solid #ffcb05;
+  border-radius: 10px;
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+.nameHP {
+  display: grid;
+  grid-auto-flow: column;
+  width: auto;
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  height: 30px;
+}
+.nameHP .pokemonName {
+  display: flex;
+  justify-content: start;
+  width: 150px;
+  text-transform: capitalize;
+  padding-left: 0.2rem;
+  font-size: 1.5rem;
+}
+.nameHP .hpDiv {
+  display: flex;
+  justify-content: end;
+  gap: 0.3rem;
+  color: red;
+  font-size: 1.3rem;
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.pokemonImageDiv {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 250px;
+  background-color: #e6e6e6;
+  border: 6px solid #bf9b30;
+  box-shadow: 6px 6px 5px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 6px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+figcaption {
+  display: flex;
+  width: 250px;
+  justify-content: center;
+  margin-top: 0.4rem;
+  gap: 0.5rem;
+  background: LINEAR-GRADIENT(TO RIGHT, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: "Inter", sans-serif;
+}
+figcaption .height {
+  padding-left: 1rem;
+}
+figcaption .weight {
+  padding-right: 1rem;
+}
+
+.types {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+}
+.types .typeNum {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  padding: 0.5rem;
+  line-height: 1.3rem;
+  height: 70px;
+  margin-top: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+.details .pokeAttack, .details .pokeDefense {
+  font-size: 1.2rem;
+}
+.details .pokeAttackNum, .details .pokeDefenseNum {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.attack {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8rem;
+  border-top: 1px solid black;
+  width: 280px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+.attack .pokeAttack, .attack .pokeAttackNum {
+  margin-top: 0.5rem;
+}
+
+.defense {
+  display: flex;
+  align-content: center;
+  gap: 7rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 0.5rem;
+  width: 280px;
+  padding: 0.5rem;
+}
+.defense .pokeDefense, .defense .pokeDefenseNum {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.moreButton {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 5rem;
+  margin-bottom: 0.8rem;
+}
+.moreButton .morebutton {
+  background: #003060;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+}
+
+.more-details {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.more-details ul {
+  line-height: 1.8rem;
+  padding-right: 1rem;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: circle;
+  font-size: 1.2rem;
+}
+
+.speed, .specialAttack, .specialDefense {
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  transition: ease-in-out 1s;
+}
+.button .newPokemon {
+  background-color: red;
+  color: white;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border-color: white;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+}
+.button .newPokemon:active {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    margin-left: -250px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=card.css.map */
