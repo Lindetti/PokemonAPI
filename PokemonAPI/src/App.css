@@ -1,0 +1,29 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background: rgba(0, 0, 0, .65) url("./backgroundImage/background.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.wrapper img {
+    width: 200px;
+  }
+
+  @media only screen and (max-height: 700px) {
+    .wrapper {
+        height: auto;
+    }
+  }
