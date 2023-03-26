@@ -6,9 +6,16 @@ footer {
     color: white;
     font-size: 1.225rem;
     font-family: 'Inter', sans-serif;
+    margin-bottom: 5rem;
 }
 
 footer a {
     color: lightgreen;
     font-family: 'Inter', sans-serif;
 }
+
+@media only screen and (max-height: 700px) {
+    footer {
+        font-size: 1rem;
+    }
+  }
